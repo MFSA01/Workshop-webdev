@@ -4,7 +4,7 @@
 
 | Tampilan Desktop |
 | :---: | :---: |
-| ![Tampilan Websitenya](https://via.placeholder.com/600x350?text=Preview+Desktop)
+| ![Tampilan Websitenya](https://mfsa01.github.io/Workshop-webdev/)
 
 ## 🤝 Berkontribusi
 
