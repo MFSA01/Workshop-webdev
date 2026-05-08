@@ -64,9 +64,6 @@ Karena proyek ini bersifat statis (tidak memerlukan server lokal atau instalasi 
 ## 📐 Arsitektur Folder
 ```text
 .
-├── assets/
-│   ├── css/            # File CSS tambahan/kustom
-│   ├── js/             # File JavaScript 
-│   └── img/            # Logo, foto pembicara, ilustrasi, dll.
+├── style.css           # File custom css
 ├── index.html          # Halaman utama landing page
 └── README.md           # Dokumentasi proyek
