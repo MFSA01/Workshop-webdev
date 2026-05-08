@@ -4,7 +4,7 @@
 
 | Tampilan Desktop |
 | :---: | :---: |
-| ![Tampilan Websitenya](https://mfsa01.github.io/Workshop-webdev/)
+| Linknya : https://mfsa01.github.io/Workshop-webdev/
 
 ## 🤝 Berkontribusi
 
