@@ -2,9 +2,9 @@
 
 *Ganti URL gambar di bawah ini dengan screenshot dari website workshop milikmu.*
 
-| Tampilan Desktop | Tampilan Mobile |
+| Tampilan Desktop |
 | :---: | :---: |
-| ![Desktop View](https://via.placeholder.com/600x350?text=Preview+Desktop) | ![Mobile View](https://via.placeholder.com/250x350?text=Preview+Mobile) |
+| ![Tampilan Websitenya](https://via.placeholder.com/600x350?text=Preview+Desktop)
 
 ## 🤝 Berkontribusi
 
