@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Workshop Web Dev</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-code-slash me-2 text-warning"></i>WebDev Workshop
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navCollapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#materi">Materi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" data-bs-toggle="dropdown">Info</a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li>
+                                <h6 class="dropdown-header">ACARA</h6>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-calendar-event me-2 text-primary"></i>Jadwal Batch
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-geo-alt me-2 text-danger"></i>Lokasi & Peta
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">MATERI</h6>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-book me-2 text-info"></i>Silabus Lengkap
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-person-video3 me-2 text-success"></i>Profil Mentor
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">BANTUAN</h6>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-question-circle me-2 text-warning"></i>FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-headset me-2 text-secondary"></i>Hubungi Kami
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning btn-sm fw-semibold px-4 text-dark" href="#daftar">
+                            <i class="bi bi-pencil-fill me-1"></i>Daftar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="background: #0f172a; min-height: 100vh;">
+                <div class="grid-overlay"></div>
+                <div class="hero-orb orb-1"></div>
+                <div class="hero-orb orb-2"></div>
+                <div class="hero-orb orb-3"></div>
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+                <div class="particle particle-5"></div>
+                <div class="particle particle-6"></div>
+                <div class="container position-relative">
+                    <div class="row align-items-center min-vh-100">
+                        <div class="col-lg-6 py-5">
+                            <span class="badge bg-warning text-dark fs-6 mb-3 px-3 badge-glow">
+                                <i class="bi bi-stars me-1"></i>Batch 2025
+                            </span>
+                            <h1 class="display-4 fw-bold text-white lh-sm mb-3">
+                                Bootstrap 5<br>Mastery Workshop
+                            </h1>
+                            <p class="lead text-white-50 mb-4">
+                                Kuasai framework CSS terpopuler di dunia dalam 2 hari
+                                intensif bersama mentor berpengalaman industri.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="#daftar" class="btn btn-warning btn-lg px-5 fw-semibold shadow">
+                                    <i class="bi bi-pencil-fill me-2"></i>Daftar Sekarang
+                                </a>
+                                <a href="#tentang" class="btn btn-outline-light btn-lg px-5">
+                                    Pelajari <i class="bi bi-arrow-down ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="hero-floating-elements">
+                                <div class="floating-card float-card-1">
+                                    <div class="floating-icon" style="background:rgba(13,110,253,0.3);">
+                                        <i class="bi bi-code-slash"></i>
+                                    </div>
+                                    <div class="fw-bold small">HTML, CSS & JS</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Fundamental Web</div>
+                                </div>
+                                <div class="floating-card float-card-2">
+                                    <div class="floating-icon" style="background:rgba(111,66,193,0.3);">
+                                        <i class="bi bi-bootstrap"></i>
+                                    </div>
+                                    <div class="fw-bold small">Bootstrap 5</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Framework CSS</div>
+                                </div>
+                                <div class="floating-card float-card-3">
+                                    <div class="floating-icon" style="background:rgba(25,135,84,0.3);">
+                                        <i class="bi bi-trophy"></i>
+                                    </div>
+                                    <div class="fw-bold small">Sertifikat</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">E-Certificate Resmi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background: linear-gradient(135deg, #198754, #20c997); min-height: 100vh;">
+                <div class="grid-overlay"></div>
+                <div class="container position-relative">
+                    <div class="row align-items-center min-vh-100">
+                        <div class="col-lg-6 py-5">
+                            <span class="badge bg-light text-dark fs-6 mb-3 px-3">Hands-On</span>
+                            <h1 class="display-4 fw-bold text-white lh-sm mb-3">
+                                Belajar Langsung<br>Praktik Nyata
+                            </h1>
+                            <p class="lead text-white-50 mb-4">
+                                Bangun proyek portfolio nyata bersama mentor berpengalaman.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="hero-floating-elements">
+                                <div class="floating-card float-card-1">
+                                    <div class="floating-icon" style="background:rgba(255,255,255,0.2);">
+                                        <i class="bi bi-laptop"></i>
+                                    </div>
+                                    <div class="fw-bold small">Live Coding</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Real-time Practice</div>
+                                </div>
+                                <div class="floating-card float-card-2">
+                                    <div class="floating-icon" style="background:rgba(255,255,255,0.2);">
+                                        <i class="bi bi-people"></i>
+                                    </div>
+                                    <div class="fw-bold small">Kolaborasi</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Team Project</div>
+                                </div>
+                                <div class="floating-card float-card-3">
+                                    <div class="floating-icon" style="background:rgba(255,255,255,0.2);">
+                                        <i class="bi bi-folder-check"></i>
+                                    </div>
+                                    <div class="fw-bold small">Portfolio</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Proyek Akhir</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background: linear-gradient(135deg, #6f42c1, #e91e8c); min-height: 100vh;">
+                <div class="grid-overlay"></div>
+                <div class="container position-relative">
+                    <div class="row align-items-center min-vh-100">
+                        <div class="col-lg-6 py-5">
+                            <span class="badge bg-warning text-dark fs-6 mb-3 px-3">Sertifikat</span>
+                            <h1 class="display-4 fw-bold text-white lh-sm mb-3">
+                                Sertifikat Resmi<br>Untuk Portofoliomu
+                            </h1>
+                            <p class="lead text-white-50 mb-4">
+                                Dapatkan sertifikat kompetensi setelah menyelesaikan workshop.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="hero-floating-elements">
+                                <div class="floating-card float-card-1">
+                                    <div class="floating-icon" style="background:rgba(255,193,7,0.3);">
+                                        <i class="bi bi-award"></i>
+                                    </div>
+                                    <div class="fw-bold small">E-Certificate</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Verifikasi Online</div>
+                                </div>
+                                <div class="floating-card float-card-2">
+                                    <div class="floating-icon" style="background:rgba(255,193,7,0.3);">
+                                        <i class="bi bi-linkedin"></i>
+                                    </div>
+                                    <div class="fw-bold small">LinkedIn Ready</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Boost Profil</div>
+                                </div>
+                                <div class="floating-card float-card-3">
+                                    <div class="floating-icon" style="background:rgba(255,193,7,0.3);">
+                                        <i class="bi bi-patch-check"></i>
+                                    </div>
+                                    <div class="fw-bold small">Kompetensi</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Skill Verified</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background: linear-gradient(135deg, #dc3545, #fd7e14); min-height: 100vh;">
+                <div class="grid-overlay"></div>
+                <div class="container position-relative">
+                    <div class="row align-items-center min-vh-100">
+                        <div class="col-lg-6 py-5">
+                            <span class="badge bg-warning text-dark fs-6 mb-3 px-3">
+                                <i class="bi bi-tag-fill me-1"></i>Early Bird
+                            </span>
+                            <h1 class="display-4 fw-bold text-white lh-sm mb-3">
+                                Harga Spesial<br>Rp 149.000
+                            </h1>
+                            <p class="lead text-white-50 mb-4">
+                                Harga normal Rp 299.000 — Daftar sekarang dan hemat 50%!
+                                Penawaran terbatas untuk 50 pendaftar pertama.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3 align-items-center">
+                                <a href="#daftar" class="btn btn-light btn-lg px-5 fw-semibold shadow text-danger">
+                                    <i class="bi bi-lightning-fill me-2"></i>Ambil Promo
+                                </a>
+                                <span class="badge bg-dark fs-6 px-3 py-2">
+                                    <i class="bi bi-clock me-1"></i>Berakhir 15 Mei 2025
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="hero-floating-elements">
+                                <div class="floating-card float-card-1">
+                                    <div class="floating-icon" style="background:rgba(255,255,255,0.2);">
+                                        <i class="bi bi-percent"></i>
+                                    </div>
+                                    <div class="fw-bold small">Diskon 50%</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Hemat Rp 150.000</div>
+                                </div>
+                                <div class="floating-card float-card-2">
+                                    <div class="floating-icon" style="background:rgba(255,255,255,0.2);">
+                                        <i class="bi bi-gift"></i>
+                                    </div>
+                                    <div class="fw-bold small">Bonus Kit</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">Template Gratis</div>
+                                </div>
+                                <div class="floating-card float-card-3">
+                                    <div class="floating-icon" style="background:rgba(255,255,255,0.2);">
+                                        <i class="bi bi-hourglass-split"></i>
+                                    </div>
+                                    <div class="fw-bold small">Terbatas</div>
+                                    <div class="text-white-50" style="font-size:0.75rem;">50 Seat Only</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section class="bg-primary py-4 stats-section">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col-6 col-md-3 mb-3 mb-md-0 stat-item">
+                    <h2 class="fw-bold mb-0 stat-number">500+</h2>
+                    <small class="text-uppercase fw-semibold" style="letter-spacing: 2px;">Alumni</small>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-md-0 stat-item">
+                    <h2 class="fw-bold mb-0 stat-number">2</h2>
+                    <small class="text-uppercase fw-semibold" style="letter-spacing: 2px;">Hari Intensif</small>
+                </div>
+                <div class="col-6 col-md-3 stat-item">
+                    <h2 class="fw-bold mb-0 stat-number">10+</h2>
+                    <small class="text-uppercase fw-semibold" style="letter-spacing: 2px;">Mentor</small>
+                </div>
+                <div class="col-6 col-md-3 stat-item">
+                    <h2 class="fw-bold mb-0 stat-number">3</h2>
+                    <small class="text-uppercase fw-semibold" style="letter-spacing: 2px;">Project</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary px-3 py-2 mb-2">Tentang Workshop</span>
+                <h2 class="fw-bold">Apa yang Akan Kamu Pelajari?</h2>
+                <p class="text-muted">Workshop intensif 2 hari yang dirancang untuk membuatmu mahir Bootstrap 5.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-3 text-center p-4 h-100">
+                        <i class="bi bi-layout-text-window-reverse text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Responsive Layout</h5>
+                        <p class="text-muted small">Pelajari Grid System, Flexbox, dan teknik layout modern.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-3 text-center p-4 h-100">
+                        <i class="bi bi-palette text-warning fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Komponen UI</h5>
+                        <p class="text-muted small">Gunakan Navbar, Card, Modal, Carousel & komponen lainnya.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-3 text-center p-4 h-100">
+                        <i class="bi bi-code-square text-success fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Proyek Nyata</h5>
+                        <p class="text-muted small">Bangun website portfolio responsif sebagai proyek akhir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="shadowComparison" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-secondary px-3 py-2 mb-2">Bootstrap Shadows</span>
+                <h2 class="fw-bold">Shadow Comparison</h2>
+                <p class="text-muted">Perbandingan variasi shadow yang tersedia di Bootstrap 5.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card border rounded-3 shadow-none p-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-square text-muted fs-1 mb-3"></i>
+                            <h6 class="fw-bold">Tanpa Shadow</h6>
+                        </div>
+                    </div>
+                    <p class="text-center mt-2 fw-semibold text-muted small">shadow-none</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card border-0 rounded-3 shadow-sm p-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-square-half text-info fs-1 mb-3"></i>
+                            <h6 class="fw-bold">Shadow Kecil</h6>
+                        </div>
+                    </div>
+                    <p class="text-center mt-2 fw-semibold text-muted small">shadow-sm</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card border-0 rounded-3 shadow p-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-square-fill text-primary fs-1 mb-3"></i>
+                            <h6 class="fw-bold">Shadow Default</h6>
+                        </div>
+                    </div>
+                    <p class="text-center mt-2 fw-semibold text-muted small">shadow</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card border-0 rounded-3 shadow-lg p-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bounding-box text-danger fs-1 mb-3"></i>
+                            <h6 class="fw-bold">Shadow Besar</h6>
+                        </div>
+                    </div>
+                    <p class="text-center mt-2 fw-semibold text-muted small">shadow-lg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="daftar" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+
+                        <div class="card-header bg-primary text-white py-4 px-5 text-center">
+                            <span class="badge bg-warning text-dark px-3 mb-2">Pendaftaran</span>
+                            <h2 class="fw-bold mb-1 fs-4">Daftar Workshop</h2>
+                        </div>
+
+                        <div class="card-body p-5">
+
+                            <div class="alert alert-info alert-dismissible fade show mb-4">
+                                <i class="bi bi-info-circle-fill me-2"></i>
+                                <strong>Info :</strong> Pendaftaran ditutup 2 hari sebelum pelaksanaan.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+
+                            <form id="regForm" class="needs-validation" novalidate>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-7">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="nama" placeholder="Nama"
+                                                required minlength="3">
+                                            <label for="nama">Nama Lengkap</label>
+                                            <div class="invalid-feedback">Nama minimal 3 karakter .</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="nim" placeholder="NIM"
+                                                required>
+                                            <label for="nim">NIM</label>
+                                            <div class="invalid-feedback">Masukkan NIM .</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            required>
+                                        <label for="email">Email Mahasiswa</label>
+                                        <div class="invalid-feedback" id="emailFeedback">Masukkan email yang valid.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold small text-muted text-uppercase">
+                                        Nomor WhatsApp
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-success text-white border-0">
+                                            <i class="bi bi-whatsapp me-1"></i> +62
+                                        </span>
+                                        <input type="tel" class="form-control" id="hp" placeholder="812xxxxxxxx"
+                                            required pattern="[0-9]{9,13}">
+                                        <div class="invalid-feedback">Nomor WA tidak valid .</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="batch" class="form-label fw-semibold small text-muted text-uppercase">
+                                        Pilih Batch
+                                    </label>
+                                    <select class="form-select form-select-lg" id="batch" required>
+                                        <option value="" selected disabled>- Pilih Batch -</option>
+                                        <option value="b1">Batch 1 - 10-11 Mei 2025 (Online)</option>
+                                        <option value="b2">Batch 2 - 17-18 Mei 2025 (Offline)</option>
+                                    </select>
+                                    <div class="invalid-feedback">Pilih Batch .</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold small text-muted text-uppercase">
+                                        Level Saat Ini
+                                    </label>
+                                    <div class="d-flex gap-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="level" id="lv1"
+                                                value="pemula" required>
+                                            <label class="form-check-label" for="lv1">Pemula</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="level" id="lv2"
+                                                value="menengah">
+                                            <label class="form-check-label" for="lv2">Menengah</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-floating mb-4">
+                                    <textarea class="form-control" id="motivasi" placeholder="Motivasi"
+                                        style="height: 110px" required minlength="20"></textarea>
+                                    <label for="motivasi">Motivasi Ikut Workshop</label>
+                                    <div class="invalid-feedback">Minimal 20 karakter .</div>
+                                </div>
+
+                                <div class="form-check form-switch mb-4">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="agreeSwitch"
+                                        required>
+                                    <label class="form-check-label" for="agreeSwitch">
+                                        Saya setuju dengan
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#syaratModal">
+                                            | Syarat & Ketentuan
+                                        </a>
+                                    </label>
+                                    <div class="invalid-feedback">Setujui syarat .</div>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg fw-semibold py-3">
+                                        <i class="bi bi-send-fill me-2"></i>Kirim Pendaftaran
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="syaratModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Syarat & Ketentuan</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>1. Persyaratan Peserta</h6>
+                    <p class="text-muted small">Terbuka untuk semua yang memiliki dasar HTML/CSS .</p>
+                    <h6>2. Pembayaran</h6>
+                    <p class="text-muted small">Non-refundable, dibayar 3 hari setelah konfirmasi .</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="document.getElementById('agreeSwitch').checked=true">
+                        Saya Setuju
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-body text-center p-5">
+                    <i class="bi bi-exclamation-triangle-fill text-warning" style="font-size:4rem;"></i>
+                    <h4 class="fw-bold mt-3 mb-2">Konfirmasi Pendaftaran</h4>
+                    <p class="text-muted">Apakah kamu yakin ingin mengirim data pendaftaran ini?</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center pb-4">
+                    <button class="btn btn-outline-secondary btn-lg px-4" data-bs-dismiss="modal">
+                        <i class="bi bi-x-lg me-1"></i>Batal
+                    </button>
+                    <button class="btn btn-primary btn-lg px-4" id="btnConfirmYes">
+                        <i class="bi bi-check-lg me-1"></i>Ya, Kirim
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-body text-center p-5">
+                    <i class="bi bi-check-circle-fill text-success" style="font-size:4rem;"></i>
+                    <h4 class="fw-bold mt-3 mb-2">Pendaftaran Berhasil !</h4>
+                    <p class="text-muted">Tim kami akan menghubungi kamu via email & WhatsApp .</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center pb-4">
+                    <button class="btn btn-success btn-lg px-5" data-bs-dismiss="modal">
+                        OK, Mengerti!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materi / Timeline Section -->
+    <section id="materi" class="py-5" style="background: #0f172a;">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="badge bg-primary px-3 py-2 mb-2">Jadwal Materi</span>
+                <h2 class="fw-bold text-white">Alur Pembelajaran</h2>
+                <div class="section-divider"></div>
+                <p class="text-white-50">Materi disusun bertahap agar mudah dipahami semua level.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline reveal">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h5 class="fw-bold text-white"><i class="bi bi-1-circle-fill text-primary me-2"></i>Hari 1 — Pagi</h5>
+                            <p class="text-white-50 mb-0">Pengenalan Bootstrap 5, Setup Environment, Grid System & Breakpoint.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h5 class="fw-bold text-white"><i class="bi bi-2-circle-fill text-info me-2"></i>Hari 1 — Siang</h5>
+                            <p class="text-white-50 mb-0">Typography, Utilities, Navbar, Card, dan komponen dasar lainnya.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h5 class="fw-bold text-white"><i class="bi bi-3-circle-fill text-danger me-2"></i>Hari 2 — Pagi</h5>
+                            <p class="text-white-50 mb-0">Form, Modal, Carousel, Accordion & komponen interaktif.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h5 class="fw-bold text-white"><i class="bi bi-4-circle-fill text-success me-2"></i>Hari 2 — Siang</h5>
+                            <p class="text-white-50 mb-0">Proyek akhir — bangun website portfolio responsif dari nol.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentor Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="badge bg-success px-3 py-2 mb-2">Tim Pengajar</span>
+                <h2 class="fw-bold">Mentor Berpengalaman</h2>
+                <div class="section-divider"></div>
+                <p class="text-muted">Belajar langsung dari praktisi industri.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 reveal">
+                    <div class="card border-0 shadow-sm rounded-4 text-center p-4 h-100 mentor-card">
+                        <div class="mentor-avatar">
+                            <i class="bi bi-person-fill text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Ahmad Rizky</h5>
+                        <p class="text-primary small fw-semibold mb-2">Frontend Engineer</p>
+                        <p class="text-muted small">5+ tahun pengalaman di industri web development.</p>
+                        <div class="d-flex justify-content-center gap-2 mt-auto">
+                            <a href="#" class="social-icon" style="background:rgba(13,110,253,0.1);color:#0d6efd;"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon" style="background:rgba(25,135,84,0.1);color:#198754;"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card border-0 shadow-sm rounded-4 text-center p-4 h-100 mentor-card">
+                        <div class="mentor-avatar">
+                            <i class="bi bi-person-fill text-success"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Dina Safitri</h5>
+                        <p class="text-success small fw-semibold mb-2">UI/UX Designer</p>
+                        <p class="text-muted small">Spesialis design system dan responsive web design.</p>
+                        <div class="d-flex justify-content-center gap-2 mt-auto">
+                            <a href="#" class="social-icon" style="background:rgba(13,110,253,0.1);color:#0d6efd;"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon" style="background:rgba(111,66,193,0.1);color:#6f42c1;"><i class="bi bi-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="card border-0 shadow-sm rounded-4 text-center p-4 h-100 mentor-card">
+                        <div class="mentor-avatar">
+                            <i class="bi bi-person-fill text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Budi Santoso</h5>
+                        <p class="text-warning small fw-semibold mb-2">Full-Stack Developer</p>
+                        <p class="text-muted small">Kontributor open-source dan technical writer.</p>
+                        <div class="d-flex justify-content-center gap-2 mt-auto">
+                            <a href="#" class="social-icon" style="background:rgba(13,110,253,0.1);color:#0d6efd;"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon" style="background:rgba(25,135,84,0.1);color:#198754;"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 text-white text-center" style="background: linear-gradient(135deg, #0d6efd, #6f42c1);">
+        <div class="container position-relative">
+            <div class="py-4 reveal">
+                <h2 class="display-6 fw-bold mb-3">Siap Tingkatkan Skillmu?</h2>
+                <p class="lead mb-4 text-white-50">Daftar sekarang dan bergabung dengan 500+ alumni sukses kami.</p>
+                <a href="#daftar" class="btn btn-warning btn-lg px-5 fw-semibold shadow">
+                    <i class="bi bi-rocket-takeoff me-2"></i>Daftar Workshop Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #0f172a;" class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-3">
+                        <i class="bi bi-code-slash me-2 text-warning"></i>WebDev Workshop
+                    </h5>
+                    <p class="text-white-50 small">Platform workshop web development terbaik untuk mahasiswa Indonesia. Belajar langsung dari praktisi industri.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Workshop</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#tentang" class="footer-link">Tentang</a></li>
+                        <li class="mb-2"><a href="#materi" class="footer-link">Materi</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Jadwal</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Bantuan</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="footer-link">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Kontak</a></li>
+                        <li class="mb-2"><a href="#" class="footer-link">Syarat</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">Lokasi</h6>
+                    <p class="text-white-50 small mb-1"><i class="bi bi-geo-alt me-2 text-danger"></i>Universitas AMIKOM Yogyakarta</p>
+                    <p class="text-white-50 small mb-1"><i class="bi bi-envelope me-2 text-primary"></i>workshop@amikom.ac.id</p>
+                    <p class="text-white-50 small"><i class="bi bi-whatsapp me-2 text-success"></i>+62 812-xxxx-xxxx</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center text-white-50 small mb-0">&copy; 2025 WebDev Workshop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script>
+        (function () {
+            const form = document.getElementById('regForm');
+            const emailInput = document.getElementById('email');
+            const emailFeedback = document.getElementById('emailFeedback');
+
+            emailInput.addEventListener('input', function () {
+                const value = emailInput.value.trim();
+                if (value && !value.endsWith('@students.amikom.ac.id')) {
+                    emailInput.setCustomValidity('Hanya email @students.amikom.ac.id yang diterima.');
+                    emailFeedback.textContent = 'Hanya email @students.amikom.ac.id yang diterima.';
+                } else {
+                    emailInput.setCustomValidity('');
+                    emailFeedback.textContent = 'Masukkan email yang valid.';
+                }
+            });
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const emailVal = emailInput.value.trim();
+                if (emailVal && !emailVal.endsWith('@students.amikom.ac.id')) {
+                    emailInput.setCustomValidity('Hanya email @students.amikom.ac.id yang diterima.');
+                    emailFeedback.textContent = 'Hanya email @students.amikom.ac.id yang diterima.';
+                }
+                if (!form.checkValidity()) {
+                    form.classList.add('was-validated');
+                    return;
+                }
+                const confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
+                confirmModal.show();
+            });
+
+            document.getElementById('btnConfirmYes').addEventListener('click', function () {
+                const confirmModalEl = document.getElementById('confirmModal');
+                const confirmModal = bootstrap.Modal.getInstance(confirmModalEl);
+                confirmModal.hide();
+                confirmModalEl.addEventListener('hidden.bs.modal', function onHidden() {
+                    confirmModalEl.removeEventListener('hidden.bs.modal', onHidden);
+                    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                    successModal.show();
+                    form.reset();
+                    form.classList.remove('was-validated');
+                });
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', function () {
+                const navbar = document.getElementById('mainNavbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Back to top
+            const backBtn = document.getElementById('backToTop');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 500) {
+                    backBtn.classList.add('show');
+                } else {
+                    backBtn.classList.remove('show');
+                }
+            });
+
+            // Scroll reveal
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.15 });
+            reveals.forEach(function (el) { observer.observe(el); });
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+
+</html>
